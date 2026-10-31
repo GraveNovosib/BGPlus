@@ -1,0 +1,441 @@
+// LIPSinc File Type - LIPSinc Tweak File
+LTF
+
+// Version
+1.0
+
+// Phoneme Timing Data
+// ===================
+
+// Num. Phonemes
+46
+
+// Phoneme Timing List, in the format:
+// INT DOUBLE DOUBLE, where INT is an integer between TALKBACK_PHONEME_FIRST and TALKBACK_PHONEME_LAST, inclusive,
+// the first DOUBLE is the Phoneme Start Time, and the second DOUBLE is the Phoneme End Time.
+//
+// There are Num. Phonemes of these entries.
+
+40 0 0.448
+0 0.448 0.592
+40 0.592 0.624
+38 0.624 0.704
+40 0.704 0.944
+29 0.944 0.992
+7 0.992 1.136
+4 1.136 1.328
+27 1.328 1.424
+30 1.424 1.52
+13 1.52 1.632
+33 1.632 1.664
+34 1.664 1.712
+3 1.712 1.824
+17 1.824 1.888
+25 1.888 1.968
+18 1.968 2.064
+11 2.064 2.176
+13 2.176 2.272
+5 2.272 2.416
+24 2.416 2.496
+40 2.496 2.912
+23 2.912 2.96
+9 2.96 3.088
+28 3.088 3.184
+35 3.184 3.248
+13 3.248 3.504
+0 3.504 3.616
+16 3.616 3.744
+0 3.744 3.872
+40 3.872 4.08
+17 4.08 4.224
+0 4.224 4.304
+27 4.304 4.4
+4 4.4 4.528
+20 4.528 4.592
+37 4.592 4.688
+40 4.688 4.864
+15 4.864 4.912
+33 4.912 5.024
+30 5.024 5.184
+27 5.184 5.328
+18 5.328 5.392
+9 5.392 5.632
+20 5.632 5.792
+40 5.792 6.048
+
+// Function Curve Data
+// ===================
+
+// Num. Curves (should always be equal to the number of targets)
+26
+
+// Function Curve List, in the format:
+// {
+//	    STRING
+//
+//  	INT
+//
+//	DOUBLE*
+// }
+//
+// The '{' signals the start of a curve definition
+// The STRING is the name of the curve.
+// The INT is the number of keys in the curve
+// The DOUBLE* is a list of DOUBLE values:  alternating time and value pairs.  For example, if the curve contained
+// 1 key, the keys section would have 2 values - the first being the key's time, the second being the key's value,
+// like so:  time_1 value_1 time_2 value_2 time_3 value_3 ... time_n value_n
+// Therefore, the number of actual DOUBLE values in the key section will always be 2 * Num. Keys
+// Some game engines, namely the Unreal engine, have hard limits on string sizes (1024 bytes in Unreal's case).
+// Therefore, the keys section is segmented into seperate lines, each containing 25 keys (time / value pairs).
+// The '}' signals the end of a curve definition
+//
+// There are Num. Curves of these curve definition entries.
+
+// Curve 0
+
+{
+	// Name
+	Eat
+
+	// Num. Keys
+	11
+
+	// Keys
+	-32 0 416 0.85 560 0 3202 0 3472 0.85 3584 0 3712 0.85 3840 0 4048 0 4192 0.85 4276 0 
+}
+
+// Curve 1
+
+{
+	// Name
+	Earth
+
+	// Num. Keys
+	0
+
+	// Keys
+	
+}
+
+// Curve 2
+
+{
+	// Name
+	If
+
+	// Num. Keys
+	33
+
+	// Keys
+	-332 0 -32 0.2 416 0 560 0.193301 589 0.00783167 593 0.00141502 670 0.2 912 0 953 0.688216 960 0.736442 1093 0.862133 1104 0.842852 1297 0 1624 0 1680 0.755832 1792 0 2384 0 2464 0.0803454 2880 0 3712 0 3840 0.2 4048 0 4263 0 4363 0.85 4464 0 
+	4502 0 4630 0.2 4832 0.357496 4836 0.348951 4876 0 5568 0 5760 0.2 6016 0 
+}
+
+// Curve 3
+
+{
+	// Name
+	Ox
+
+	// Num. Keys
+	9
+
+	// Keys
+	2144 0 2240 0.85 2384 0 2755 0 2928 0.653832 3056 0 5296 0 5360 0.85 5568 0 
+}
+
+// Curve 4
+
+{
+	// Name
+	Oat
+
+	// Num. Keys
+	10
+
+	// Keys
+	1390 0 1488 0.85 1575 0 1926 0 2032 0.85 2144 0.85 2240 0 3104 0 3202 0.85 3472 0 
+}
+
+// Curve 5
+
+{
+	// Name
+	Wet
+
+	// Num. Keys
+	9
+
+	// Keys
+	670 0 912 0.85 970 0 1288 0 1390 0.85 1488 0 4791 0 4961 0.85 5152 0 
+}
+
+// Curve 6
+
+{
+	// Name
+	Size
+
+	// Num. Keys
+	9
+
+	// Keys
+	1839 0 1926 0.85 2032 0 3472 0 3584 0.85 3712 0 5152 0 5296 0.85 5360 0 
+}
+
+// Curve 7
+
+{
+	// Name
+	Church
+
+	// Num. Keys
+	9
+
+	// Keys
+	1549 0 1624 0.85 1673 0.0964385 1686 0.0316966 1785 0.85 1865 0 3840 0 4048 0.85 4192 0 
+}
+
+// Curve 8
+
+{
+	// Name
+	Fave
+
+	// Num. Keys
+	6
+
+	// Keys
+	4363 0 4464 0.7 4553 0 5360 0 5568 0.7 5760 0 
+}
+
+// Curve 9
+
+{
+	// Name
+	Though
+
+	// Num. Keys
+	3
+
+	// Keys
+	2416 0 2755 0.85 2942 0 
+}
+
+// Curve 10
+
+{
+	// Name
+	Told
+
+	// Num. Keys
+	18
+
+	// Keys
+	1093 0 1296 0.819039 1392 0 1488 0 1568 0.653413 1632 0 4192 0 4272 0.763959 4368 0 4464 0 4528 0.513726 4656 0 4714 0 4843 0.508144 4963 0.0502544 4992 0.0538949 5152 0.85 5296 0 
+}
+
+// Curve 11
+
+{
+	// Name
+	Bump
+
+	// Num. Keys
+	3
+
+	// Keys
+	2240 0 2384 0.85 2588 0 
+}
+
+// Curve 12
+
+{
+	// Name
+	New
+
+	// Num. Keys
+	3
+
+	// Keys
+	1785 0 1856 0.653413 1936 0 
+}
+
+// Curve 13
+
+{
+	// Name
+	Roar
+
+	// Num. Keys
+	3
+
+	// Keys
+	2888 0 3041 0.85 3165 0 
+}
+
+// Curve 14
+
+{
+	// Name
+	Cage
+
+	// Num. Keys
+	6
+
+	// Keys
+	555 0 591 0.193526 672 0 3041 0 3152 0.115096 3216 0 
+}
+
+// Curve 15
+
+{
+	// Name
+	Eyebrow Raise Left
+
+	// Num. Keys
+	3
+
+	// Keys
+	99 0 448 0.635844 957 0 
+}
+
+// Curve 16
+
+{
+	// Name
+	Eyebrow Raise Right
+
+	// Num. Keys
+	3
+
+	// Keys
+	107 0 458 0.635844 947 0 
+}
+
+// Curve 17
+
+{
+	// Name
+	Blink Left
+
+	// Num. Keys
+	3
+
+	// Keys
+	6591 0 6633 1 6764 0 
+}
+
+// Curve 18
+
+{
+	// Name
+	Blink Right
+
+	// Num. Keys
+	3
+
+	// Keys
+	6591 0 6633 1 6764 0 
+}
+
+// Curve 19
+
+{
+	// Name
+	Head Bend
+
+	// Num. Keys
+	6
+
+	// Keys
+	105 0 448 4.54174 801 2.75533 1136 2.23691 1272 1.75105 1911 0 
+}
+
+// Curve 20
+
+{
+	// Name
+	Head Side Side
+
+	// Num. Keys
+	6
+
+	// Keys
+	2900 0 3182 1.53418 3248 1.83735 3504 2.37144 3860 0.524365 4130 0 
+}
+
+// Curve 21
+
+{
+	// Name
+	Head Twist
+
+	// Num. Keys
+	3
+
+	// Keys
+	764 0 992 -2.76144 1709 0 
+}
+
+// Curve 22
+
+{
+	// Name
+	Eye Side Side Left
+
+	// Num. Keys
+	7
+
+	// Keys
+	764 0 992 2.76144 1504 0.548131 1604 -0.439682 1709 -0.6 4721 -0.6 4813 0 
+}
+
+// Curve 23
+
+{
+	// Name
+	Eye Side Side Right
+
+	// Num. Keys
+	7
+
+	// Keys
+	764 0 992 2.76144 1504 0.548131 1604 -0.439682 1709 -0.6 4721 -0.6 4813 0 
+}
+
+// Curve 24
+
+{
+	// Name
+	Eye Up Down Left
+
+	// Num. Keys
+	10
+
+	// Keys
+	1 0 105 0.997686 108 0.998964 448 -3.54174 801 -1.75533 1136 -1.23691 1272 -0.751055 1504 -0.0251905 1604 -0.660508 1911 0 
+}
+
+// Curve 25
+
+{
+	// Name
+	Eye Up Down Right
+
+	// Num. Keys
+	10
+
+	// Keys
+	1 0 105 0.997686 108 0.998964 448 -3.54174 801 -1.75533 1136 -1.23691 1272 -0.751055 1504 -0.0251905 1604 -0.660508 1911 0 
+}
+
+// Expressions Curve Data
+// ======================
+
+// Num. Expression Curves
+0
+
+// Expression Curve List, in the same format as the function curve section above.
+// There are Num. Expression Curves of these.
+

@@ -1,0 +1,430 @@
+// LIPSinc File Type - LIPSinc Tweak File
+LTF
+
+// Version
+1.0
+
+// Phoneme Timing Data
+// ===================
+
+// Num. Phonemes
+35
+
+// Phoneme Timing List, in the format:
+// INT DOUBLE DOUBLE, where INT is an integer between TALKBACK_PHONEME_FIRST and TALKBACK_PHONEME_LAST, inclusive,
+// the first DOUBLE is the Phoneme Start Time, and the second DOUBLE is the Phoneme End Time.
+//
+// There are Num. Phonemes of these entries.
+
+40 0 0.144
+0 0.144 0.272
+8 0.272 0.416
+22 0.416 0.496
+2 0.496 0.64
+33 0.64 0.672
+19 0.672 0.784
+15 0.784 0.816
+18 0.816 0.864
+33 0.864 0.912
+11 0.912 1.008
+26 1.008 1.072
+15 1.072 1.136
+20 1.136 1.248
+9 1.248 1.408
+15 1.408 1.456
+25 1.456 1.552
+40 1.552 1.824
+11 1.824 2.016
+40 2.016 2.208
+34 2.208 2.256
+15 2.256 2.288
+25 2.288 2.32
+4 2.32 2.496
+16 2.496 2.576
+38 2.576 2.624
+12 2.624 2.688
+25 2.688 2.72
+18 2.72 2.784
+15 2.784 2.816
+25 2.816 2.896
+16 2.896 3.008
+8 3.008 3.216
+25 3.216 3.328
+40 3.328 3.936
+
+// Function Curve Data
+// ===================
+
+// Num. Curves (should always be equal to the number of targets)
+26
+
+// Function Curve List, in the format:
+// {
+//	    STRING
+//
+//  	INT
+//
+//	DOUBLE*
+// }
+//
+// The '{' signals the start of a curve definition
+// The STRING is the name of the curve.
+// The INT is the number of keys in the curve
+// The DOUBLE* is a list of DOUBLE values:  alternating time and value pairs.  For example, if the curve contained
+// 1 key, the keys section would have 2 values - the first being the key's time, the second being the key's value,
+// like so:  time_1 value_1 time_2 value_2 time_3 value_3 ... time_n value_n
+// Therefore, the number of actual DOUBLE values in the key section will always be 2 * Num. Keys
+// Some game engines, namely the Unreal engine, have hard limits on string sizes (1024 bytes in Unreal's case).
+// Therefore, the keys section is segmented into seperate lines, each containing 25 keys (time / value pairs).
+// The '}' signals the end of a curve definition
+//
+// There are Num. Curves of these curve definition entries.
+
+// Curve 0
+
+{
+	// Name
+	Eat
+
+	// Num. Keys
+	3
+
+	// Keys
+	-32 0 112 0.85 240 0 
+}
+
+// Curve 1
+
+{
+	// Name
+	Earth
+
+	// Num. Keys
+	0
+
+	// Keys
+	
+}
+
+// Curve 2
+
+{
+	// Name
+	If
+
+	// Num. Keys
+	35
+
+	// Keys
+	-332 0 -32 0.2 112 0 240 0.85 384 0 464 0.85 583 0 632 0 752 0.689112 790 0 946 0 1031 0.540973 1072 0 1216 0 1376 0.85 1398 0.664931 1449 0.109363 1494 0.2 1792 0 1984 0.2 2166 0.00187499 2177 0.0826415 2222 0.821531 2229 0.768079 2267 0.740489 
+	2275 0.805069 2464 0 2670 0 2748 0.821531 2813 0 2834 0 2976 0.85 3184 0 3296 0.2 3904 0 
+}
+
+// Curve 3
+
+{
+	// Name
+	Ox
+
+	// Num. Keys
+	3
+
+	// Keys
+	1066 0 1216 0.85 1376 0 
+}
+
+// Curve 4
+
+{
+	// Name
+	Oat
+
+	// Num. Keys
+	9
+
+	// Keys
+	781 0 869 0.85 984 0 1494 0 1792 0.85 1984 0 2489 0 2576 0.85 2666 0 
+}
+
+// Curve 5
+
+{
+	// Name
+	Wet
+
+	// Num. Keys
+	0
+
+	// Keys
+	
+}
+
+// Curve 6
+
+{
+	// Name
+	Size
+
+	// Num. Keys
+	12
+
+	// Keys
+	729 0 780 0.211858 809 0 2273 0 2458 0.85 2559 0 2601 0 2677 0.775259 2752 0 2755 0 2833 0.85 2976 0 
+}
+
+// Curve 7
+
+{
+	// Name
+	Church
+
+	// Num. Keys
+	6
+
+	// Keys
+	550 0 632 0.85 755 0 1984 0 2176 0.80862 2224 0 
+}
+
+// Curve 8
+
+{
+	// Name
+	Fave
+
+	// Num. Keys
+	6
+
+	// Keys
+	240 0 384 0.7 464 0 1000 0 1064 0.7 1216 0 
+}
+
+// Curve 9
+
+{
+	// Name
+	Though
+
+	// Num. Keys
+	0
+
+	// Keys
+	
+}
+
+// Curve 10
+
+{
+	// Name
+	Told
+
+	// Num. Keys
+	6
+
+	// Keys
+	464 0 576 0.653413 640 0 741 0 792 0.65429 880 0 
+}
+
+// Curve 11
+
+{
+	// Name
+	Bump
+
+	// Num. Keys
+	0
+
+	// Keys
+	
+}
+
+// Curve 12
+
+{
+	// Name
+	New
+
+	// Num. Keys
+	18
+
+	// Keys
+	870 0 976 0.615504 1045 0 1376 0 1424 0.40414 1520 0 2220 0 2255 0.22041 2292 0 2576 0 2656 0.270235 2690 0 2746 0 2783 0.22041 2864 0 2976 0 3184 0.85 3296 0 
+}
+
+// Curve 13
+
+{
+	// Name
+	Roar
+
+	// Num. Keys
+	0
+
+	// Keys
+	
+}
+
+// Curve 14
+
+{
+	// Name
+	Cage
+
+	// Num. Keys
+	3
+
+	// Keys
+	2459 0 2544 0.0716976 2592 0 
+}
+
+// Curve 15
+
+{
+	// Name
+	Eyebrow Raise Left
+
+	// Num. Keys
+	9
+
+	// Keys
+	0 0 103 0.540186 144 0.660566 272 0.654474 526 0.0676483 700 0 2062 0 2320 0.548858 2681 0 
+}
+
+// Curve 16
+
+{
+	// Name
+	Eyebrow Raise Right
+
+	// Num. Keys
+	9
+
+	// Keys
+	0 0 116 0.588784 146 0.649175 281 0.628752 516 0.0758354 698 0 2057 0 2327 0.548858 2688 0 
+}
+
+// Curve 17
+
+{
+	// Name
+	Blink Left
+
+	// Num. Keys
+	6
+
+	// Keys
+	64 0 144 1 304 0 2232 0 2320 1 2516 0 
+}
+
+// Curve 18
+
+{
+	// Name
+	Blink Right
+
+	// Num. Keys
+	6
+
+	// Keys
+	64 0 144 1 304 0 2232 0 2320 1 2516 0 
+}
+
+// Curve 19
+
+{
+	// Name
+	Head Bend
+
+	// Num. Keys
+	9
+
+	// Keys
+	0 0 144 4.52046 711 0 2029 0 2320 3.92042 2759 0.565491 2897 1.00616 3008 1.73175 3575 0 
+}
+
+// Curve 20
+
+{
+	// Name
+	Head Side Side
+
+	// Num. Keys
+	3
+
+	// Keys
+	302 0 496 1.92164 960 0 
+}
+
+// Curve 21
+
+{
+	// Name
+	Head Twist
+
+	// Num. Keys
+	6
+
+	// Keys
+	86 0 272 2.8074 766 0 1060 0 1248 -2.29944 1693 0 
+}
+
+// Curve 22
+
+{
+	// Name
+	Eye Side Side Left
+
+	// Num. Keys
+	10
+
+	// Keys
+	86 0 272 -2.8074 766 0 1060 0 1248 2.29944 1693 0 1724 0 1839 -0.6 2519 -0.6 2563 0 
+}
+
+// Curve 23
+
+{
+	// Name
+	Eye Side Side Right
+
+	// Num. Keys
+	10
+
+	// Keys
+	86 0 272 -2.8074 766 0 1060 0 1248 2.29944 1693 0 1724 0 1839 -0.6 2519 -0.6 2563 0 
+}
+
+// Curve 24
+
+{
+	// Name
+	Eye Up Down Left
+
+	// Num. Keys
+	13
+
+	// Keys
+	0 0 1 -2.55196 45 -2.44983 144 -3.52046 711 1 1724 1 1839 0 2029 0 2320 -3.92042 2759 -0.565491 2897 -1.00616 3008 -1.73175 3575 0 
+}
+
+// Curve 25
+
+{
+	// Name
+	Eye Up Down Right
+
+	// Num. Keys
+	13
+
+	// Keys
+	0 0 1 -2.55196 45 -2.44983 144 -3.52046 711 1 1724 1 1839 0 2029 0 2320 -3.92042 2759 -0.565491 2897 -1.00616 3008 -1.73175 3575 0 
+}
+
+// Expressions Curve Data
+// ======================
+
+// Num. Expression Curves
+0
+
+// Expression Curve List, in the same format as the function curve section above.
+// There are Num. Expression Curves of these.
+
